@@ -2,13 +2,27 @@
   display: flex;
   width: 100vw;
   height: 100vh;
-  background: url("../../../public/images/bg_universe.png") no-repeat left
+  background: url("../../../public/images/bg_universe.png") fixed no-repeat left
     center;
   background-size: cover;
   position: relative;
 }
 
 .title_wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /* background: url("../../../public/images/universe_people.png") no-repeat center
+    center; */
+  background-size: cover;
+}
+
+.title_span {
   display: inline-block;
   position: relative;
   padding: 0.5em 1em;
@@ -32,6 +46,7 @@
     border-bottom: 1px solid #fff;
     -webkit-animation: 2.5s draw-bottom;
     animation: 2.5s draw-bottom;
+    background-color: var(--color-gray);
   }
 }
 
@@ -40,6 +55,13 @@
   color: #fff;
   -webkit-animation: 3s fade;
   animation: 3s fade;
+}
+
+.scroll_down_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
 
 .scroll_down {
@@ -82,7 +104,6 @@
   border: 2px solid rgb(255, 255, 255);
   border-radius: 100%;
   animation: 1.2s ease-in-out 0s infinite normal none running scrollDown;
-
   content: "";
   position: absolute;
 }

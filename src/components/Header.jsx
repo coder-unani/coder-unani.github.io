@@ -1,18 +1,29 @@
-import React, { forwardRef, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "css/components/Header.module.css";
 
-const Header = forwardRef((props, ref) => {
+const Header = (props) => {
   const { menuItems, updateCurrSection } = props;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuBtn = useRef(null);
 
   const navOnClick = (e) => {
+    setIsMenuOpen(false);
     updateCurrSection("set", Number(e.target.attributes.gotosec.value));
   };
 
+  const handleToggle = (e) => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  useEffect(() => {
+    menuBtn.current.addEventListener("click", handleToggle);
+  }, [isMenuOpen]);
+
   return (
     <>
-      <header ref={ref} className={styles.header}>
+      <header className={styles.header}>
         <div className={styles.logo}>
           <img
             className={styles.logo_img}
@@ -24,7 +35,7 @@ const Header = forwardRef((props, ref) => {
           </h1>
         </div>
         <nav className={styles.nav}>
-          <ul className={styles.menu}>
+          <ul className={`${styles.menu} ${isMenuOpen ? styles.open : null}`}>
             {menuItems.map((menu, index) => (
               <li
                 key={index}
@@ -37,12 +48,16 @@ const Header = forwardRef((props, ref) => {
             ))}
           </ul>
         </nav>
-        <button className={styles.toggle} aria-label="navigation menu toggle">
+        <button
+          ref={menuBtn}
+          className={styles.toggle}
+          aria-label="navigation menu toggle"
+        >
           <i className="fa-solid fa-bars"></i>
         </button>
       </header>
     </>
   );
-});
+};
 
 export default Header;

@@ -4,7 +4,7 @@ import styles from "css/components/Contact.module.css";
 
 const Contact = () => {
   return (
-    <section id="contact" className={`section ${styles.contact}`}>
+    <section className={`section ${styles.contact}`}>
       <div className={styles.contact_wrap}>
         <img
           src="images/my_memoji.png"
@@ -19,6 +19,9 @@ const Contact = () => {
             <h1>coder-unani.github.io</h1>
           </li>
         </ul>
+      </div>
+      <div className={styles.copyright_wrap}>
+        <p>© 2024 UNANI all rights reserved.</p>
       </div>
     </section>
   );

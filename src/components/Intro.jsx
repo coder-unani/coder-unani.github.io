@@ -10,14 +10,22 @@ const Intro = (props) => {
   };
 
   return (
-    <section id="intro" className={`section ${styles.intro}`}>
-      <div>
-        <span className={styles.title_wrap}>
-          <h1 className={styles.title}>TITLE</h1>
+    <section className={`section ${styles.intro}`}>
+      <div className={styles.title_wrap}>
+        <span className={styles.title_span}>
+          <h1 className={styles.title}>
+            Hello,
+            <br />
+            I'm Developer
+            <br />
+            UNANI
+          </h1>
         </span>
       </div>
-      <div className={styles.scroll_down} onClick={onClick}>
-        <p>SCROLL DOWN</p>
+      <div className={styles.scroll_down_wrap}>
+        <div className={styles.scroll_down} onClick={onClick}>
+          <p>SCROLL DOWN</p>
+        </div>
       </div>
     </section>
   );

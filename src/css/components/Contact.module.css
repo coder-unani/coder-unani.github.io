@@ -1,8 +1,12 @@
 .contact {
+  flex-direction: column;
 }
-
 .contact_wrap {
+  flex: 9;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .memoji {
@@ -13,4 +17,27 @@
 .info {
   padding: 2rem;
   text-align: left;
+}
+
+.copyright_wrap {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+}
+
+.copyright_wrap p {
+  padding-right: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact_wrap {
+    flex-direction: column;
+  }
+  .info_wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

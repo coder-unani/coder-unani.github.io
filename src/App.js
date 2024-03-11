@@ -22,7 +22,6 @@ function App() {
   const [currSection, setCurrSection] = useState(0);
   // Refs
   const bodyWrap = useRef(null);
-  const headerWrap = useRef(null);
 
   //  TouchStart Event Handler
   let touchStartY = 0;
@@ -73,13 +72,6 @@ function App() {
     }
     menuEls[currSection].classList.add("active");
 
-    // Header visibility
-    if (currSection > 0) {
-      headerWrap.current.style = "position: fixed; top: 0; left: 0;";
-    } else {
-      headerWrap.current.style = "position: relative;";
-    }
-
     // Clean up
     return () => {
       // Remove EventListeners
@@ -114,11 +106,7 @@ function App() {
     <>
       <div ref={bodyWrap} className={styles.body_wrap}>
         <Intro updateCurrSection={updateCurrSection} />
-        <Header
-          ref={headerWrap}
-          menuItems={menuItems}
-          updateCurrSection={updateCurrSection}
-        />
+        <Header menuItems={menuItems} updateCurrSection={updateCurrSection} />
         <About />
         <Skills />
         <Projects />
