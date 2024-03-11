@@ -16,7 +16,7 @@ const Intro = (props) => {
           <h1 className={styles.title}>
             Hello,
             <br />
-            I'm Developer
+            I'm Software Developer
             <br />
             UNANI
           </h1>

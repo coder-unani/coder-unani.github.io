@@ -9,14 +9,37 @@
   align-items: center;
 }
 
+.memoji_wrap {
+  flex: 1;
+}
 .memoji {
   width: 250px;
   height: 250px;
+  margin: auto;
 }
 
-.info {
-  padding: 2rem;
+.contact_list {
+  margin-left: 1.5rem;
   text-align: left;
+  flex: 1;
+}
+
+.contact_item {
+  display: flex;
+  height: 2.5rem;
+}
+
+.contact_item i {
+  font-size: 1.3rem;
+  width: 1.5rem;
+  text-align: center;
+}
+
+.contact_item a {
+  margin-left: 0.5rem;
+  color: var(--color-content);
+  font-size: 1rem;
+  line-height: 1.3rem;
 }
 
 .copyright_wrap {

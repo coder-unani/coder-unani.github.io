@@ -25,14 +25,13 @@
 .title_span {
   display: inline-block;
   position: relative;
-  padding: 0.5em 1em;
+  padding: 0.5em 1.5em;
   &:before {
     display: block;
     content: "";
     width: 100%;
-    margin-left: -5%;
     margin-bottom: 5%;
-    border-top: 1px solid #fff;
+    border-top: 1px solid var(--color-text);
     -webkit-animation: 2.5s draw;
     animation: 2.5s draw;
   }
@@ -43,7 +42,7 @@
     bottom: 0;
     right: 0;
     width: 100%;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid var(--color-white);
     -webkit-animation: 2.5s draw-bottom;
     animation: 2.5s draw-bottom;
     background-color: var(--color-gray);
@@ -52,7 +51,7 @@
 
 .title {
   width: 100%;
-  color: #fff;
+  color: var(--color-white);
   -webkit-animation: 3s fade;
   animation: 3s fade;
 }
@@ -75,37 +74,36 @@
 
 .scroll_down p {
   position: relative;
-  padding-left: 2.5rem;
-  color: rgb(255, 255, 255);
+  padding-left: 2rem;
+  color: var(--color-white);
   font-size: 1.3rem;
   font-weight: 700;
   cursor: pointer;
+  line-height: 2.5rem;
 }
 
 .scroll_down p::before {
-  top: -0.4rem;
-  left: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 0.2rem;
   height: 2.5rem;
-
   content: "";
-  position: absolute;
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-white);
 }
 
 .scroll_down p::after {
-  overflow: hidden;
-  box-sizing: border-box;
+  position: absolute;
   top: 1rem;
-  left: -0.75rem;
+  left: -0.9rem;
   width: 1.6rem;
   height: 1.6rem;
-  background-color: rgb(60, 64, 64);
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 100%;
-  animation: 1.2s ease-in-out 0s infinite normal none running scrollDown;
   content: "";
-  position: absolute;
+  background-color: var(--color-gray);
+  border: 2px solid var(--color-white);
+  border-radius: 100%;
+  overflow: hidden;
+  animation: 1.2s ease-in-out 0s infinite normal none running scrollDown;
 }
 
 @media screen and (max-width: 768px) {
@@ -123,7 +121,7 @@
     top: -50%;
   }
   100% {
-    top: 50%;
+    top: 70%;
   }
 }
 
@@ -132,7 +130,7 @@
     width: 0%;
   }
   100% {
-    width: 110%;
+    width: 100%;
   }
 }
 
