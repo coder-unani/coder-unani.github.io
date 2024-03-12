@@ -1,0 +1,47 @@
+.about {
+  flex-direction: column;
+  position: relative;
+  color: var(--color-content);
+}
+
+.about_wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.about_item_wrap {
+  padding: 0.5rem;
+  border-radius: 10%;
+  border: 1px solid var(--color-black);
+}
+
+.about_item_wrap i {
+  font-size: 2rem;
+}
+
+.about_item_name {
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: var(--color-white);
+}
+
+@keyframes circle_moving {
+  0% {
+    clip-path: circle(15.6% at 24% 23%);
+  }
+  30% {
+    clip-path: circle(21.2% at 24% 57%);
+  }
+  50% {
+    clip-path: circle(34.8% at 64% 84%);
+  }
+  80% {
+    clip-path: circle(54.7% at 79% 53%);
+  }
+  100% {
+    clip-path: circle(89.3% at 57% 69%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
