@@ -2,10 +2,6 @@
   flex-direction: column;
   position: relative;
   color: var(--color-content);
-  /* background: url("../../../public/images/universe_people.png") no-repeat center
-    center; */
-  /* background-size: contain; */
-  /* background-color: var(--color-primary); */
 }
 
 .about_wrap {
