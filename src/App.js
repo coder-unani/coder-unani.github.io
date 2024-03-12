@@ -108,7 +108,7 @@ function App() {
         <Intro updateCurrSection={updateCurrSection} />
         <Header menuItems={menuItems} updateCurrSection={updateCurrSection} />
         <About />
-        <Skills />
+        <Skills currSection={currSection} />
         <Projects />
         <Contact />
       </div>

@@ -7,8 +7,6 @@
 .skills .part {
   width: 90%;
   height: 15%;
-  border: 1px solid var(--color-black);
-  border-radius: 30px;
   margin: 0.5rem 0.5rem;
 }
 
@@ -16,8 +14,8 @@
   display: flex;
   flex-direction: row;
   /* transform: translateX(-100%); */
-  -webkit-animation: 2.5s slideRight;
-  animation: 2.5s slideRight;
+  /* -webkit-animation: 2.5s ease-in-out 0s slideRight;
+  animation: 2.5s ease-in-out 0s slideRight; */
 }
 
 .skills .backend {
@@ -43,14 +41,29 @@
 .title {
   display: flex;
   width: 20vw;
+  color: var(--color-text);
+  background-color: var(--color-primary);
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--color-primary);
 }
 
 .detail {
   display: flex;
   width: 80vw;
+  padding: 1rem;
   align-items: center;
+}
+
+.frontend .title,
+.database .title,
+.etc .title {
+  border-radius: 30px 0 0 30px;
+}
+
+.backend .title,
+.devops .title {
+  border-radius: 0 30px 30px 0;
 }
 
 .frontend .detail,

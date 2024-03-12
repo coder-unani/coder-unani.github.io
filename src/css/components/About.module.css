@@ -2,6 +2,10 @@
   flex-direction: column;
   position: relative;
   color: var(--color-content);
+  /* background: url("../../../public/images/universe_people.png") no-repeat center
+    center; */
+  /* background-size: contain; */
+  /* background-color: var(--color-primary); */
 }
 
 .about_wrap {
@@ -25,42 +29,22 @@
   color: var(--color-white);
 }
 
-.usecomputer {
-  position: absolute;
-  width: 250px;
-  height: 250px;
-}
-
-.usecomputer.first {
-  top: 100px;
-  left: 50px;
-  background: url("../../../public/images/usecomputer1.png") no-repeat center
-    center;
-  background-size: contain;
-}
-
-.usecomputer.second {
-  top: 300px;
-  right: 50px;
-  background: url("../../../public/images/usecomputer2.png") no-repeat center
-    center;
-  background-size: contain;
-}
-
-.usecomputer.third {
-  top: 500px;
-  left: 0;
-  background: url("../../../public/images/usecomputer3.png") no-repeat center
-    center;
-  background-size: contain;
-}
-
-.usecomputer.fourth {
-  top: 750px;
-  right: 0;
-  background: url("../../../public/images/usecomputer4.png") no-repeat center
-    center;
-  background-size: contain;
+@keyframes circle_moving {
+  0% {
+    clip-path: circle(15.6% at 24% 23%);
+  }
+  30% {
+    clip-path: circle(21.2% at 24% 57%);
+  }
+  50% {
+    clip-path: circle(34.8% at 64% 84%);
+  }
+  80% {
+    clip-path: circle(54.7% at 79% 53%);
+  }
+  100% {
+    clip-path: circle(89.3% at 57% 69%);
+  }
 }
 
 @media screen and (max-width: 768px) {

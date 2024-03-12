@@ -115,16 +115,7 @@ const About = () => {
 
   return (
     <section className={`section ${styles.about}`}>
-      <div className={styles.about_wrap}>
-        <div className={styles.about_item_wrap}>
-          <i className="fa-solid fa-laptop-code"></i>
-          <span className={styles.about_item_name}>개발경력 10 YEAR+</span>
-        </div>
-      </div>
-      <div className={`${styles.usecomputer} ${styles.first}`}></div>
-      <div className={`${styles.usecomputer} ${styles.second}`}></div>
-      <div className={`${styles.usecomputer} ${styles.third}`}></div>
-      <div className={`${styles.usecomputer} ${styles.fourth}`}></div>
+      <div className={styles.about_wrap}></div>
     </section>
   );
 };
