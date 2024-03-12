@@ -25,13 +25,13 @@ const Contact = () => {
             </a>
           </li>
           <li className={styles.contact_item}>
-            <i class="fa-brands fa-linkedin" target="_BLANK"></i>
+            <i className={`fa-brands fa-linkedin`} target="_BLANK"></i>
             <a href="https://www.linkedin.com/in/yunhwan-lee-774b7b2b9/">
               yunhwan-lee-774b7b2b9
             </a>
           </li>
           <li className={styles.contact_item}>
-            <i class="fa-solid fa-comment"></i>
+            <i className={`fa-solid fa-comment`}></i>
             <a href="https://open.kakao.com/o/s55G0wfg">KakaoTalk</a>
           </li>
         </ul>

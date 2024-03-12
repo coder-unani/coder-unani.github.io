@@ -1,2 +1,76 @@
 .skills {
+  flex-direction: column;
+  color: var(--color-content);
+  padding-bottom: 5rem;
+}
+
+.skills .part {
+  width: 90%;
+  height: 15%;
+  border: 1px solid var(--color-black);
+  border-radius: 30px;
+  margin: 0.5rem 0.5rem;
+}
+
+.skills .frontend {
+  display: flex;
+  flex-direction: row;
+  /* transform: translateX(-100%); */
+  -webkit-animation: 2.5s slideRight;
+  animation: 2.5s slideRight;
+}
+
+.skills .backend {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills .database {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills .devops {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills .etc {
+  display: flex;
+  flex-direction: row;
+}
+
+.title {
+  display: flex;
+  width: 20vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail {
+  display: flex;
+  width: 80vw;
+  align-items: center;
+}
+
+.frontend .detail,
+.database .detail,
+.etc .detail {
+  justify-content: left;
+  text-align: left;
+}
+
+.backend .detail,
+.devops .detail {
+  justify-content: right;
+  text-align: right;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

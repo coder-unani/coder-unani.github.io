@@ -107,6 +107,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
   .scroll_down {
     bottom: 5rem;
   }

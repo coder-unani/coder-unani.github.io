@@ -58,9 +58,25 @@
   .contact_wrap {
     flex-direction: column;
   }
-  .info_wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+  .contact_item {
+    height: 3.5rem;
+  }
+
+  .memoji_wrap {
+    flex: 0;
+  }
+
+  .contact_list {
+    flex: 0;
+  }
+  .contact_item i {
+    font-size: 2rem;
+    width: 2rem;
+  }
+
+  .contact_item a {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }

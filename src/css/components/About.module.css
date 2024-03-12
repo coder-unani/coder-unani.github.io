@@ -1,72 +1,67 @@
 .about {
+  flex-direction: column;
+  position: relative;
+  color: var(--color-content);
 }
 
-.majors {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin: 2.5rem 0;
+.about_wrap {
+  width: 100%;
+  height: 100%;
 }
 
-.major {
-  background-color: var(--color-primary-variant);
-  padding: 2rem 1rem;
-  color: var(--color-text);
-  border-radius: 1rem;
-  cursor: default;
-  width: 30%;
-  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
+.about_item_wrap {
+  padding: 0.5rem;
+  border-radius: 10%;
+  border: 1px solid var(--color-black);
 }
 
-.major_icon {
-  font-size: 4rem;
-  margin: 1rem 0;
-  color: var(--color-accent);
-  transition: all 300ms ease;
+.about_item_wrap i {
+  font-size: 2rem;
 }
 
-.major_title {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+.about_item_name {
+  padding: 0 1rem;
+  font-size: 2rem;
+  color: var(--color-white);
 }
 
-.major:hover .major_icon {
-  transform: rotate(-15deg) scale(1.2);
+.usecomputer {
+  position: absolute;
+  width: 250px;
+  height: 250px;
 }
 
-.jobs {
-  text-align: start;
+.usecomputer.first {
+  top: 100px;
+  left: 50px;
+  background: url("../../../public/images/usecomputer1.png") no-repeat center
+    center;
+  background-size: contain;
 }
 
-.job {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 1rem;
+.usecomputer.second {
+  top: 300px;
+  right: 50px;
+  background: url("../../../public/images/usecomputer2.png") no-repeat center
+    center;
+  background-size: contain;
 }
 
-.job_name {
-  color: var(--color-primary);
+.usecomputer.third {
+  top: 500px;
+  left: 0;
+  background: url("../../../public/images/usecomputer3.png") no-repeat center
+    center;
+  background-size: contain;
 }
 
-.job_period {
-  color: var(--color-primary);
-  font-size: 0.8rem;
+.usecomputer.fourth {
+  top: 750px;
+  right: 0;
+  background: url("../../../public/images/usecomputer4.png") no-repeat center
+    center;
+  background-size: contain;
 }
 
 @media screen and (max-width: 768px) {
-  .majors {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .major {
-    max-width: 25rem;
-    width: 100%;
-  }
-
-  .job {
-    justify-content: center;
-  }
 }
