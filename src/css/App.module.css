@@ -1,8 +1,1 @@
-.body_wrap {
-  height: 100vh;
-  overflow-y: auto;
-}
 
-.body_wrap::-webkit-scrollbar {
-  display: none;
-}

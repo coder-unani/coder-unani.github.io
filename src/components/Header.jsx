@@ -2,10 +2,11 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import styles from "css/components/Header.module.css";
+import { useUiContext } from "context/UiContext";
 
 const Header = (props) => {
-  const { menuItems, updateCurrSection } = props;
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { updateCurrSection } = props;
+  const { menuItems, isMenuOpen, setIsMenuOpen } = useUiContext();
   const menuBtn = useRef(null);
 
   const navOnClick = (e) => {
@@ -19,6 +20,9 @@ const Header = (props) => {
 
   useEffect(() => {
     menuBtn.current.addEventListener("click", handleToggle);
+    return () => {
+      menuBtn.current.removeEventListener("click", handleToggle);
+    };
   }, [isMenuOpen]);
 
   return (
