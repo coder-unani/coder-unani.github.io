@@ -48,10 +48,10 @@
   width: 100%;
   height: auto;
   justify-content: center;
+  align-items: center;
 }
 
 .copyright_wrap p {
-  padding-right: 2rem;
 }
 
 @media screen and (max-width: 768px) {

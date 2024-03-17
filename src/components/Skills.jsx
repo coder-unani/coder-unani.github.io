@@ -5,12 +5,6 @@ import styles from "css/components/Skills.module.css";
 const Skills = (props) => {
   const { currSection } = props;
 
-  const frontendEls = useRef(null);
-  const backendEls = useRef(null);
-  const databaseEls = useRef(null);
-  const devopsEls = useRef(null);
-  const etcEls = useRef(null);
-
   return (
     <section className={`section ${styles.skills}`}>
       <div className={`${styles.part} ${styles.frontend}`}>
