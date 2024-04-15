@@ -1,0 +1,81 @@
+@import "styles/constraints.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 35px;
+  background-color: $color-header-bg;
+  border-top: 1px solid $color-header-border;
+  border-bottom: 1px solid $color-header-border;
+
+  .circle_wrap {
+    display: flex;
+    flex: 1;
+    min-width: 80px;
+    justify-content: left;
+    align-items: center;
+    padding: 0 15px;
+
+    .circle {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      border: 1px solid #000000;
+      margin-left: 7px;
+
+      &.red {
+        background-color: #db6e5d;
+      }
+
+      &.yellow {
+        background-color: #eac045;
+      }
+
+      &.green {
+        background-color: #7dc34d;
+      }
+    }
+  }
+
+  .search_wrap {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      border-radius: 5px;
+      padding: 5px;
+      margin: 5px;
+      width: 50%;
+      color: $color-header-search-text;
+      background-color: $color-header-search-bg;
+      border: 1px solid $color-header-search-border;
+      outline: none;
+    }
+  }
+
+  .sidebar_wrap {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      padding-right: 15px;
+
+      li {
+        margin-right: 7px;
+
+        img {
+          width: 16px;
+          filter: invert(94%) sepia(1%) saturate(1883%) hue-rotate(202deg)
+            brightness(115%) contrast(60%);
+        }
+      }
+    }
+  }
+}

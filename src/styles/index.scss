@@ -1,0 +1,12 @@
+.body_wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  color: var(--color-default-text);
+  background-color: var(--color-default-bg);
+  font-family: "synthese", sans-serif;
+  font-size: 0.7rem;
+  font-weight: 300;
+  font-style: normal;
+}

@@ -1,0 +1,26 @@
+@import "styles/constraints.scss";
+
+.footer {
+  flex: 1;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  color: $color-footer-text;
+  background-color: $color-footer-bg;
+  border-top: 1px solid $color-footer-border;
+  border-left: 1px solid $color-footer-border;
+  border-right: 1px solid $color-footer-border;
+
+  p {
+    margin-right: 15px;
+  }
+
+  @media screen and (max-width: $media-mobile) {
+    justify-content: center;
+
+    p {
+      margin-right: 0;
+    }
+  }
+}
