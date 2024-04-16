@@ -1,0 +1,37 @@
+[
+  {
+    "id": "index",
+    "name": "index.html",
+    "icon": "icon_file_html5.svg",
+    "children": [
+      {
+        "id": "index-1",
+        "name": "print(\"Hello World!\")",
+        "icon": "icon_file_html5.svg"
+      },
+      {
+        "id": "index-2",
+        "name": "introduce",
+        "icon": "icon_file_html5.svg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "about.css",
+    "icon": "icon_file_css.svg",
+    "children": []
+  },
+  {
+    "id": 3,
+    "name": "works.js",
+    "icon": "icon_file_javascript.svg",
+    "children": []
+  },
+  {
+    "id": 4,
+    "name": "contact.json",
+    "icon": "icon_file_json.svg",
+    "children": []
+  }
+]
