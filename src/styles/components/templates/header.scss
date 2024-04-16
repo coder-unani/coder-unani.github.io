@@ -70,10 +70,9 @@
       li {
         margin-right: 7px;
 
-        img {
+        .svg {
           width: 16px;
-          filter: invert(94%) sepia(1%) saturate(1883%) hue-rotate(202deg)
-            brightness(115%) contrast(60%);
+          fill: $color-header-icon;
         }
       }
     }

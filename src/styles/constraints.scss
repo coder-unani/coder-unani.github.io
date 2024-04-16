@@ -1,3 +1,9 @@
+$color-default-bg: #333333;
+$color-default-icon: #858585;
+$color-default-highlight-icon: #ffffff;
+$color-default-border: #474747;
+$color-default-text: #ffffff;
+
 $color-header-bg: #212428;
 $color-header-icon: #cccccc;
 $color-header-text: #cccccc;
@@ -7,18 +13,27 @@ $color-header-search-icon: #cccccc;
 $color-header-search-text: #cccccc;
 $color-header-search-border: #616161;
 
-$color-nav1-bg: #26292e;
-$color-nav1-icon: #6d737c;
-$color-nav1-text: #ffffff;
-$color-nav1-border: #1a1d20;
-$color-nav1-highlight-icon: #ffffff;
+$color-nav-bg: #26292e;
+$color-nav-icon: #6d737c;
+$color-nav-text: #ffffff;
+$color-nav-border: #1a1d20;
+$color-nav-highlight-icon: #ffffff;
 
-$color-nav2-bg: #212428;
-$color-nav2-icon: #858585;
-$color-nav2-text: #cccccc;
-$color-nav2-border: #1a1d20;
-$color-nav2-highlight-bg: #26292e;
-$color-nav2-highlight-text: #97c694;
+$color-togglemenu-bg: #212428;
+$color-togglemenu-icon: #858585;
+$color-togglemenu-text: #cccccc;
+$color-togglemenu-border: #1a1d20;
+$color-togglemenu-highlight-bg: #26292e;
+$color-togglemenu-highlight-text: #97c694;
+
+$color-content-indicator-bg: #212428;
+$color-content-indicator-icon: #414141;
+$color-content-indicator-text: #ffffff;
+$color-content-indicator-border: #26292e;
+$color-content-indicator-none-bg: #212428;
+$color-content-indicator-highlight-bg: #26292e;
+$color-content-indicator-highlight-text: #97c694;
+$color-content-indicator-highlight-border: #db8b70;
 
 $color-content-bg: #1e1e1e;
 $color-content-text: #ffffff;
@@ -31,15 +46,6 @@ $color-editor-border: #1e1e1e;
 $color-editor-navi-bg: #1e1e1e;
 $color-editor-navi-text: #a9a9a9;
 
-$color-editor-tab-bg: #212428;
-$color-editor-tab-icon: #414141;
-$color-editor-tab-text: #ffffff;
-$color-editor-tab-border: #26292e;
-$color-editor-tab-none-bg: #212428;
-$color-editor-tab-highlight-bg: #26292e;
-$color-editor-tab-highlight-text: #97c694;
-$color-editor-tab-highlight-border: #db8b70;
-
 $color-terminal-bg: #26292e;
 $color-terminal-text: #ffffff;
 $color-terminal-border: #1a1d20;
@@ -47,5 +53,10 @@ $color-terminal-border: #1a1d20;
 $color-footer-bg: #26292e;
 $color-footer-text: #ffffff;
 $color-footer-border: #1c1f23;
+
+$color-icon-html: #e34f26;
+$color-icon-css: #1572b6;
+$color-icon-js: #f7df1e;
+$color-icon-json: #fbc02d;
 
 $media-mobile: 768px;

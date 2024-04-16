@@ -1,4 +1,5 @@
 import React from "react";
+import { SVGSidebarLeft, SVGPanel } from "components/atoms/svgs";
 
 import "styles/components/templates/header.scss";
 
@@ -16,16 +17,10 @@ const Header: React.FC = () => {
       <div className="sidebar_wrap">
         <ul>
           <li>
-            <img
-              src={require("assets/icon_panel.svg").default}
-              alt="sidebar_icon"
-            />
+            <SVGPanel className="svg" />
           </li>
           <li>
-            <img
-              src={require("assets/icon_sidebarleft.svg").default}
-              alt="sidebar_icon"
-            />
+            <SVGSidebarLeft className="svg" />
           </li>
         </ul>
       </div>

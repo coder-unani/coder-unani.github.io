@@ -1,21 +1,20 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
 
 // components
 import Header from "components/templates/header";
-import Nav from "components/templates/nav";
 import Footer from "components/templates/footer";
+import Main from "components/templates/main";
+
+// scss
+import "styles/app.scss";
 
 const app: React.FC = () => {
   return (
-    <>
+    <div className="body_wrap">
       <Header />
-      <main>
-        <Nav />
-        <Outlet />
-      </main>
+      <Main />
       <Footer />
-    </>
+    </div>
   );
 };
 

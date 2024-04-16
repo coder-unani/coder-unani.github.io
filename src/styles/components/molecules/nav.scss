@@ -1,0 +1,112 @@
+@import "styles/constraints.scss";
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 50px;
+  color: $color-nav-text;
+  background-color: $color-nav-bg;
+  border-right: 1px solid $color-nav-border;
+
+  ul {
+    &:first-child {
+      margin-top: 5px;
+    }
+
+    li {
+      padding: 15px 10px;
+      cursor: pointer;
+
+      .svg {
+        width: 26px;
+        height: 26px;
+        fill: $color-nav-icon;
+
+        &.active {
+          fill: $color-nav-highlight-icon;
+        }
+      }
+    }
+  }
+}
+
+.toggle_menu {
+  width: 250px;
+  color: $color-togglemenu-text;
+  background-color: $color-togglemenu-bg;
+  border-right: 1px solid $color-togglemenu-border;
+  overflow: hidden;
+
+  .title {
+    font-size: 1rem;
+    padding: 10px 5px 15px 22px;
+  }
+
+  .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px 2px 5px;
+
+    &:hover {
+      background-color: $color-togglemenu-highlight-bg;
+    }
+
+    &.depth1 {
+      padding-left: 30px;
+    }
+
+    &.depth2 {
+      padding-left: 45px;
+    }
+
+    .arrow {
+      width: 16px;
+
+      .svg {
+        width: 16px;
+        height: 16px;
+        fill: $color-togglemenu-icon;
+      }
+    }
+
+    .icon {
+      width: 14px;
+
+      .svg {
+        width: 14px;
+        height: 14px;
+
+        &.folder {
+          fill: $color-togglemenu-icon;
+        }
+
+        &.html {
+          fill: $color-icon-html;
+        }
+
+        &.css {
+          fill: $color-icon-css;
+        }
+
+        &.js {
+          fill: $color-icon-js;
+        }
+
+        &.json {
+          fill: $color-icon-json;
+        }
+      }
+    }
+
+    .text {
+      flex: 1 0 auto;
+      text-align: left;
+      font-size: 0.9rem;
+      padding-left: 5px;
+    }
+  }
+}
