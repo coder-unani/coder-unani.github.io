@@ -1,26 +1,69 @@
 @import "styles/constraints.scss";
 
 .footer {
-  flex: 1;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
+  height: 30px;
   width: 100%;
+  font-size: 12px;
   color: $color-footer-text;
   background-color: $color-footer-bg;
   border-top: 1px solid $color-footer-border;
   border-left: 1px solid $color-footer-border;
   border-right: 1px solid $color-footer-border;
 
-  p {
-    margin-right: 15px;
+  .left {
+    display: flex;
+    flext-direction: row;
+    padding: 0 0 0 20px;
+
+    .icon {
+      margin-right: 5px;
+      .svg {
+        width: 14px;
+        height: 14px;
+        fill: $color-footer-icon;
+      }
+    }
+  }
+  .copyright {
+    padding-bottom: 2px;
+  }
+
+  .right {
+    display: flex;
+    flext-direction: row;
+    padding: 0 10px;
+
+    .icon {
+      margin-right: 5px;
+      .svg {
+        width: 14px;
+        height: 14px;
+        fill: $color-footer-icon;
+      }
+
+      &.bell {
+        margin-left: 20px;
+      }
+    }
+
+    .text {
+      padding-bottom: 2px;
+    }
   }
 
   @media screen and (max-width: $media-mobile) {
-    justify-content: center;
+    .footer {
+      justify-content: center;
+      .left {
+        display: none;
+      }
 
-    p {
-      margin-right: 0;
+      .right {
+        display: none;
+      }
     }
   }
 }

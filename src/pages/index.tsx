@@ -1,10 +1,11 @@
+import { SVGVSCode } from "components/atoms/svgs";
 import React from "react";
 
 const Index: React.FC = () => {
   return (
-    <section className="content">
-      <h1>Hello World</h1>
-    </section>
+    <>
+      <SVGVSCode className="svg" width="300" height="300" />
+    </>
   );
 };
 

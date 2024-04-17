@@ -8,10 +8,10 @@ $color-header-bg: #212428;
 $color-header-icon: #cccccc;
 $color-header-text: #cccccc;
 $color-header-border: #1a1d20;
-$color-header-search-bg: #464646;
+$color-header-search-bg: #26292e;
 $color-header-search-icon: #cccccc;
 $color-header-search-text: #cccccc;
-$color-header-search-border: #616161;
+$color-header-search-border: #db8b70;
 
 $color-nav-bg: #26292e;
 $color-nav-icon: #6d737c;
@@ -26,16 +26,26 @@ $color-togglemenu-border: #1a1d20;
 $color-togglemenu-highlight-bg: #26292e;
 $color-togglemenu-highlight-text: #97c694;
 
-$color-content-indicator-bg: #212428;
-$color-content-indicator-icon: #414141;
-$color-content-indicator-text: #ffffff;
-$color-content-indicator-border: #26292e;
-$color-content-indicator-none-bg: #212428;
-$color-content-indicator-highlight-bg: #26292e;
-$color-content-indicator-highlight-text: #97c694;
-$color-content-indicator-highlight-border: #db8b70;
+$color-content-tab-bg: #212428;
+$color-content-tab-icon: #414141;
+$color-content-tab-text: #ffffff;
+$color-content-tab-border: #26292e;
+$color-content-tab-none-bg: #212428;
+$color-content-tab-highlight-bg: #26292e;
+$color-content-tab-highlight-icon: #ffffff;
+$color-content-tab-highlight-text: #97c694;
+$color-content-tab-highlight-border: #db8b70;
 
-$color-content-bg: #1e1e1e;
+$color-content-indicator-bg: #26292e;
+$color-content-indicator-icon: #414141;
+$color-content-indicator-text: #a9a9a9;
+$color-content-indicator-border: #26292e;
+$color-content-indicator-highlight-bg: #26292e;
+$color-content-indicator-highlight-icon: #414141;
+$color-content-indicator-highlight-text: #ffffff;
+$color-content-indicator-highlight-border: #26292e;
+
+$color-content-bg: #26292e;
 $color-content-text: #ffffff;
 $color-content-border: #1e1e1e;
 
@@ -47,10 +57,13 @@ $color-editor-navi-bg: #1e1e1e;
 $color-editor-navi-text: #a9a9a9;
 
 $color-terminal-bg: #26292e;
-$color-terminal-text: #ffffff;
+$color-terminal-text: #979797;
 $color-terminal-border: #1a1d20;
+$color-terminal-highlight-text: #ffffff;
+$color-terminal-highlight-border: #db8b70;
 
 $color-footer-bg: #26292e;
+$color-footer-icon: #ffffff;
 $color-footer-text: #ffffff;
 $color-footer-border: #1c1f23;
 

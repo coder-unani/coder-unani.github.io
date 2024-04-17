@@ -1,0 +1,47 @@
+@import "styles/constraints.scss";
+
+.terminal_wrap {
+  flex: 1;
+  width: 100%;
+  font-size: 12px;
+  color: $color-terminal-text;
+  background-color: $color-terminal-bg;
+  border-top: 1px solid $color-terminal-border;
+
+  .tab {
+    height: 30px;
+    padding: 15px;
+    color: $color-terminal-text;
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+
+      li {
+        text-align: center;
+        padding: 0 5px;
+
+        span {
+          padding: 5px;
+        }
+
+        &.active {
+          span {
+            color: $color-terminal-highlight-text;
+            border-bottom: 1px solid $color-terminal-highlight-border;
+          }
+        }
+
+        @media screen and (max-width: $media-mobile) {
+          &.problems,
+          &.output,
+          &.debug {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+@import "styles/constraints.scss";
+
+.content_tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: $color-content-tab-text;
+  background-color: $color-content-tab-bg;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 13px;
+      position: relative;
+      border-top: 1px solid $color-content-tab-border;
+      border-right: 1px solid $color-content-tab-border;
+      border-bottom: 1px solid $color-content-tab-border;
+
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14px;
+        height: 28px;
+        padding: 0 5px 0 0;
+
+        .svg {
+          width: 16px;
+          height: 16px;
+
+          &.html {
+            fill: $color-icon-html;
+          }
+
+          &.css {
+            fill: $color-icon-css;
+          }
+
+          &.js {
+            fill: $color-icon-js;
+          }
+
+          &.json {
+            fill: $color-icon-json;
+          }
+        }
+      }
+
+      .text {
+        padding-bottom: 4px;
+      }
+
+      &.active {
+        color: $color-content-tab-highlight-text;
+        background-color: $color-content-tab-highlight-bg;
+        border-top: 1px solid $color-content-tab-highlight-border;
+        border-bottom: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $media-mobile) {
+    ul {
+      li {
+        width: 25%;
+
+        &.none {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.content_indicator {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: 24px;
+  font-size: 12px;
+  color: $color-content-indicator-text;
+
+  .line {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+
+    .text {
+      padding-bottom: 4px;
+    }
+
+    .icon {
+      margin-right: 5px;
+
+      .svg {
+        width: 12px;
+        height: 12px;
+        fill: $color-content-indicator-icon;
+
+        &.html {
+          fill: $color-icon-html;
+        }
+
+        &.css {
+          fill: $color-icon-css;
+        }
+
+        &.js {
+          fill: $color-icon-js;
+        }
+
+        &.json {
+          fill: $color-icon-json;
+        }
+      }
+    }
+  }
+
+  .divider {
+    .icon {
+      .svg {
+        width: 12px;
+        height: 12px;
+        fill: $color-content-indicator-text;
+      }
+    }
+  }
+}

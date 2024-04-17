@@ -28,19 +28,25 @@
           fill: $color-nav-highlight-icon;
         }
       }
+
+      &.active {
+        .svg {
+          fill: $color-nav-highlight-icon;
+        }
+      }
     }
   }
 }
 
 .toggle_menu {
   width: 250px;
+  min-width: 250px;
   color: $color-togglemenu-text;
   background-color: $color-togglemenu-bg;
   border-right: 1px solid $color-togglemenu-border;
   overflow: hidden;
 
   .title {
-    font-size: 1rem;
     padding: 10px 5px 15px 22px;
   }
 
@@ -49,7 +55,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 2px 5px 2px 5px;
+    padding: 5px 0;
 
     &:hover {
       background-color: $color-togglemenu-highlight-bg;
@@ -75,6 +81,7 @@
 
     .icon {
       width: 14px;
+      margin-right: 5px;
 
       .svg {
         width: 14px;
@@ -105,8 +112,13 @@
     .text {
       flex: 1 0 auto;
       text-align: left;
-      font-size: 0.9rem;
-      padding-left: 5px;
+      padding-bottom: 4px;
     }
+  }
+}
+
+@media screen and (max-width: $media-mobile) {
+  .toggle_menu {
+    display: none;
   }
 }
