@@ -1,5 +1,5 @@
 const Works: React.FC = () => {
-  return <></>;
+  return <>works</>;
 };
 
 export default Works;

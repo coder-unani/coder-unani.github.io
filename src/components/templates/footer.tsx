@@ -7,6 +7,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <div className="left">
+        <div className="logo">
+          <img src="/favicon.ico" alt="logo" />
+        </div>
         <div className="icon">
           <SVGSourceControl className="svg" width="14" height="14" />
         </div>

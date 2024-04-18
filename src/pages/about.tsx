@@ -1,5 +1,9 @@
 const About: React.FC = () => {
-  return <></>;
+  return (
+    <>
+      <h1>about</h1>
+    </>
+  );
 };
 
 export default About;

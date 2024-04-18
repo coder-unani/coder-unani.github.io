@@ -1,21 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // components
-import Header from "components/templates/header";
-import Footer from "components/templates/footer";
 import Main from "components/templates/main";
 
-// scss
-import "styles/app.scss";
+type typeMenus = {
+  id: string;
+  name: string;
+  path: string;
+  icon: string;
+  children?: {
+    id: string;
+    name: string;
+    path: string;
+    icon: string;
+  }[];
+};
 
 const app: React.FC = () => {
-  return (
-    <div className="body_wrap">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
+  const [menus, setMenus] = useState<typeMenus[]>([]);
+
+  useEffect(() => {
+    fetch("config/menus.json")
+      .then((res) => res.json())
+      .then((data) => {
+        // setMenus(data);
+      });
+    return () => {
+      console.log("cleanup");
+    };
+  }, []);
+
+  return <Main />;
 };
 
 export default app;

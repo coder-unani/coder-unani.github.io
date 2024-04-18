@@ -16,10 +16,19 @@
   .left {
     display: flex;
     flext-direction: row;
-    padding: 0 0 0 20px;
+
+    .logo {
+      margin: 0 10px;
+
+      img {
+        width: 14px;
+        height: 14px;
+      }
+    }
 
     .icon {
-      margin-right: 5px;
+      margin: 0 5px 0 10px;
+
       .svg {
         width: 14px;
         height: 14px;
@@ -27,6 +36,7 @@
       }
     }
   }
+
   .copyright {
     padding-bottom: 2px;
   }
@@ -60,7 +70,6 @@
       .left {
         display: none;
       }
-
       .right {
         display: none;
       }
